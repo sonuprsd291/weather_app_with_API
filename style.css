@@ -1,0 +1,119 @@
+
+body{
+    background-color: black;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.weather_header{
+    /* height: 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather_header input{
+    background-color: black;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    padding-left: 40px;
+    box-shadow: rgba(0, 0, 0, 0.157) 1px 1px 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input::placeholder{
+    color: white;
+}
+
+form{
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.157) 1px 1px 30px;
+}
+
+form i{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+}
+
+.weather_body{
+    text-align: center;
+}
+
+.weather_body h1{
+    font-size: 1.8rem;
+    margin-bottom: -5px;
+}
+.weather_body .w_datetime{
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+.weather_body .w_forecast{
+    background-color: black;
+    display: inline;
+    color: white;
+    padding: 9px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+}
+.weather_body .w_icon{
+    margin: 30px 0;
+
+}
+.weather_body .w_icon img{
+    width: 50px;
+}
+
+
+.w_tempmax, .w_tempmin{
+    display: inline;
+    margin: 0 20px;
+}
+
+.footer{
+    padding: 30px 0;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.w_cards{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.157) 1px 1px 30px;
+    display: flex;
+    align-items: center;
+    /* padding-left: 50px; */
+    position: relative;
+    height: 40px;
+    padding: 15px 65px;
+}
+.w_cards i{
+    position: absolute;
+    font-size: 1.3rem;
+    left: 25px;
+    top: 25px;
+}
+.w_cards p{
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+}
